@@ -76,6 +76,7 @@ public class EmaillistDao {
 			stmt = connection.createStatement();
 
 			// 4. SQL 실행
+			// order by no desc 최신 순으로
 			String sql = "select no, first_name, last_name, email from emaillist order by no desc";
 			rs = stmt.executeQuery(sql);
 
