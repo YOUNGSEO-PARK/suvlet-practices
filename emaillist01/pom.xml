@@ -8,39 +8,15 @@
   <artifactId>emaillist01</artifactId>
   <packaging>war</packaging>
   
-  <dependencies>
-	</dependencies>	
+	 <dependencies>
+	  	<dependency>
+	    	<groupId>org.mariadb.jdbc</groupId>
+	    	<artifactId>mariadb-java-client</artifactId>
+	    	<version>2.6.2</version>
+	    </dependency>
+	</dependencies>
 	
 	<build>
-	<finalName>emaillist</finalName>
-	<sourceDirectory>src/main/java</sourceDirectory>
-		
-		<resources>
-			<resource>
-				<directory>${project.basedir}/src/main/resources</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
-				
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<configuration>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.2.1</version>
-				<configuration>
-					<warSourceDirectory>src/main/webapp</warSourceDirectory>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-			</plugin>
-		</plugins>
+	<finalName>emaillist01</finalName>	
 	</build>
 </project>
