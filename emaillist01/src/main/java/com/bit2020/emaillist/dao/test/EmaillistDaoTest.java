@@ -12,9 +12,10 @@ public class EmaillistDaoTest {
 		
 	}
 	
+	// 테스트 케이스
 	public static void testSelectList() {
 		List<EmaillistVo> list = new EmaillistDao().findAll();
-		if(list.size() == 2) {
+		if(list.size() >= 2) {
 			System.out.println("성공");
 		} else {
 			System.out.println("실패");
@@ -25,7 +26,7 @@ public class EmaillistDaoTest {
 		EmaillistVo vo = new EmaillistVo();
 		vo.setFirstName("박");
 		vo.setLastName("영서");
-		vo.setEmail("irene0seo@gmail.com");
+		vo.setEmail("irene0seo97@gmail.com");
 		
 		boolean result = new EmaillistDao().insert(vo);
 		if(result) {
