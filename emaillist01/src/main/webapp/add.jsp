@@ -15,6 +15,7 @@
 	
 	new EmaillistDao().insert(vo);
 	
+	// 브라우저한테 응답하는 것
 	response.sendRedirect("index.jsp");
 %>
 <!DOCTYPE html>
@@ -24,10 +25,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%=firstName %><br>
-	<%=lastName %><br>
-	<%=email %><br>
-	
 	<h1>성공적으로 등록되었습니다.</h1>
 </body>
 </html>
