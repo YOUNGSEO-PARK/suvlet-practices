@@ -1,13 +1,12 @@
-SELECT * FROM webdb.emaillist;
-desc webdb.emaillist;
+desc emaillist;
 
 -- select _C
-select * from webdb.emaillist;
+select * from emaillist;
 -- 최신 순
-select no, first_name, last_name, email from webdb.emaillist order by no desc;
+select no, first_name, last_name, email from emaillist order by no desc;
 
 -- insert _R
-insert into emaillist values(null, '박', '영서', 'irene0seo97@gmail.com');
+insert into emaillist values(null, '박', '영서', 'pys6790@naver.com');
 
 -- update _U
 
